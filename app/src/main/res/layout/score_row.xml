@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardBackgroundColor="#2783C1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20"
+        android:minHeight="70dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:hint="Score"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="55dp"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/dark_blue"
+            android:textColor="@color/dirty_white"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:hint="N/A"
+            android:layout_width="0dp"
+            android:layout_weight="14"
+            android:layout_height="55dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity=""
+            android:padding="12dp"
+            android:layout_marginHorizontal="2dp"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

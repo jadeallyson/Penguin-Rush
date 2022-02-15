@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Penguin Rush</string>
+    <string name="facebook_app_id">391768919383100</string>
+    <string name="fb_login_protocol_scheme">fb391768919383100</string>
+<!--    <string name="facebook_client_token">56789</string>-->
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverActivity"
+    android:background="#022845">
+
+    <TextView
+        android:id="@+id/tv_gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME OVER"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/dirty_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="160dp" />
+
+    <TextView
+        android:id="@+id/tv_yourscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: "
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_gameover"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_finalscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_gameover"
+        app:layout_constraintLeft_toRightOf="@+id/tv_yourscore"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_gothighscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You got a high score!"
+        android:textSize="20dp"
+        android:textColor="@color/dirty_white"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_yourscore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="150dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_gothighscore"
+        android:hint="Your Name"
+        android:paddingLeft="15dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:text="OK"
+        app:layout_constraintTop_toBottomOf="@id/tv_gothighscore"
+        app:layout_constraintLeft_toRightOf="@id/et_name"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/orange"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_gameover"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="80dp"
+        android:paddingVertical="10dp"
+        android:backgroundTint="#e88420"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/btn_try"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRY AGAIN"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="80dp"
+        android:paddingVertical="10dp"
+        android:backgroundTint="#1476b8"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@id/btn_share"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <com.facebook.share.widget.ShareButton
+        android:id="@+id/btn_share"
+        android:text="Share Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_share"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:text="Share"-->
+<!--        android:layout_marginBottom="25dp"-->
+<!--        android:layout_marginRight="25dp"-->
+<!--        android:backgroundTint="#1476b8"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
