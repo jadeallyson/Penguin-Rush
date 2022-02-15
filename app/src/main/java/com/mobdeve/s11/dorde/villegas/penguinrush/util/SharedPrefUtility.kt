@@ -20,15 +20,4 @@ class SharedPrefUtility {
 
     fun getStringPreferences(key: String?): String?
             = appPreferences!!.getString(key, "Nothing Saved")
-
-    fun removeStringPreferences(key: String?){
-        val prefsEditor = appPreferences!!.edit()
-        prefsEditor.remove(key).commit()
-    }
-
-    fun removeAllPreferences(){
-        appPreferences!!.edit().clear().commit()
-    }
-
-
 }

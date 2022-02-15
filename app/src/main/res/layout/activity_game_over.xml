@@ -130,17 +130,5 @@
         app:layout_constraintRight_toRightOf="parent"
         />
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_share"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:text="Share"-->
-<!--        android:layout_marginBottom="25dp"-->
-<!--        android:layout_marginRight="25dp"-->
-<!--        android:backgroundTint="#1476b8"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        />-->
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
