@@ -132,7 +132,7 @@ class GameOverActivity : AppCompatActivity() {
 
         var sharecontent = ShareLinkContent.Builder().setQuote("I scored $finalScore in Penguin Rush!")
             .setShareHashtag(hashTag)
-            .setContentUrl(Uri.parse("https://www.facebook.com/angelgrace.dorde.27/posts/2091177861048684?notif_id=1644922575774813&notif_t=shared_priv_with_me&ref=notif"))
+            .setContentUrl(Uri.parse("https://www.facebook.com/108999348377813/photos/a.109006681710413/109007475043667/"))
             .build()
 
         btnShare!!.shareContent = sharecontent
